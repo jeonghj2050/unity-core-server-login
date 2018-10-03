@@ -21,6 +21,8 @@ namespace DotnetCoreServer.Controllers
 
             UserResult result = new UserResult();
             result.Data = userDao.GetUser(UserID);
+            result.ResultCode=1;
+            result.Message="OK";
             return result;
 
         }
