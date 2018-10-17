@@ -17,7 +17,7 @@ namespace DotnetCoreServer.Controllers
         }
 
         [HttpGet]
-        public UserResult Info(long UserID){
+        public UserResult Info(int UserID){
 
             UserResult result = new UserResult();
             result.Data = userDao.GetUser(UserID);
